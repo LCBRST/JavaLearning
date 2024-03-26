@@ -9,12 +9,12 @@ public class Trangle {
         else{
             return false;
         }
-    public double getArea(){
+    }
+        double getArea(){
         double d=getLength();
-        return Math.sqrt(double d*(d-a)*(d-b)*(d-c)));
+        return Math.sqrt(d*(d-a)*(d-b)*(d-c));
     }
-    public double getLength(){
+    double getLength(){
         return a+b+c;
-    }
     }
 }
