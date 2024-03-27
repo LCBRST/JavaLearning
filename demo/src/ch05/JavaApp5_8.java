@@ -9,8 +9,9 @@ public class JavaApp5_8 {
         String str="";
         String newStr="";
         String sub="";
-        Scanner sc=new Scanner(System.in);
-        str=sc.nextLine();
+        try (Scanner sc = new Scanner(System.in)) {
+            str=sc.nextLine();
+        }
         for(int i=0;i<str.length();i++){
             sub=str.substring(i, i+1);
             newStr=sub+newStr;
