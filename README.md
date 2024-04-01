@@ -9,7 +9,9 @@
     THIS IS A PRIVATE LIBRARY FOR LEARNING JAVA
 
                You can look FOR FUN
+
    You can also go to issues and guide me if you like
+   
   ps:I know I'm writing A MOUNTAIN of piece of SHIT XD
 
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
