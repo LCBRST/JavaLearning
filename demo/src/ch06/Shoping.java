@@ -2,16 +2,59 @@ package ch06;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 //商品类
 class Product {
- String name;
- double price;
+ private String name;
+ private double price;
+ private String color;
 
  public Product(String name, double price) {
      this.name = name;
      this.price = price;
+ }
+ public Product(String name){
+     this.name=name;
+ }
+ public Product(){
+    
+ }
+ public Product(String name,String color){
+    this.name=name;
+    this.color=color;
+ }
+ public Product(String name,String color,double price){
+    this.name=name;
+    this.color=color;
+    this.price=price;
+ }
+//  接口区
+ public String getName(){
+    return name;
+ }
+ public double getPrice(){
+    return price;
+ }
+ public String getColor(){
+    return color;
+ }
+ public void setProduct(String name){
+    this.name=name;
+ }
+ public void setProduct(double price){
+    this.price=price;    
+ }
+ public void setProduct(String name,double price){
+    this.name=name;
+    this.price=price;
+ }
+ public void setProduct(String name,String color){   
+    this.color=color;
+ }
+ public void setProduct(String name,String color,double price){
+    this.name=name;
+    this.color=color;
+    this.price=price;
  }
 }
 
@@ -27,14 +70,14 @@ class ShoppingCart {
 
  public void addProduct(Product product) {
      productList.add(product);
-     totalPrice += product.price;
-     System.out.println(product.name + " 已添加到购物车");
+     totalPrice += product.getPrice();
+     System.out.println(product.getColor() + product.getName() + " 已添加到购物车");
  }
 
  public void calculateTotalPrice() {
      System.out.println("购物清单：");
      for (Product product : productList) {
-         System.out.println(product.name + " - ￥" + product.price);
+         System.out.println(product.getColor() + product.getName() + " - ￥" + product.getPrice());
      }
      System.out.println("总价：￥" + totalPrice);
  }
@@ -44,26 +87,22 @@ class ShoppingCart {
 public class Shoping {
  public static void main(String[] args) {
      ShoppingCart cart = new ShoppingCart();
-     try (Scanner sc = new Scanner(System.in)) {
-        String pd,name;
-         double price;
-         pd=sc.nextLine();
-         String[] strs=pd.split(" ");
-         name=strs[0];
-         price=Double.parseDouble(strs[1]);
-         Product apple = new Product("苹果", 5.0);
-         Product banana = new Product("香蕉", 3.0);
-         Product shoes =new Product("单鞋",100);
-         Product product =new Product(name, price);
+         
+         Product apple = new Product("苹果","红", 5.0);
+         Product banana = new Product("香蕉","黄", 3.0);
+         Product shoes =new Product("单鞋","黑",100);
+         Product phone=new Product("HUAWEI Nova 11SE","五彩斑斓的黑 ",3999);
+
 
          cart.addProduct(apple);
          cart.addProduct(banana);
          cart.addProduct(shoes);
-         cart.addProduct(product);
-    } catch (NumberFormatException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
+         cart.addProduct(phone);
+
+        //  apple 20%OFF
+        //  apple.setProduct(4.0);
+        //  apple.setProduct("苹果","红");
+         cart.addProduct(apple);
      cart.calculateTotalPrice();
  }
 }
