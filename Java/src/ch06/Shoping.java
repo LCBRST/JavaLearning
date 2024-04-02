@@ -59,7 +59,7 @@ class Product {
     this.name=name;
     this.color=color;
     this.price=price;
-    this.num++;
+   //  this.num++;
  }
 
 // 计数器
