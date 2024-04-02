@@ -8,6 +8,7 @@ class Product {
  private String name;
  private double price;
  private String color;
+//  private int num;
 
  public Product(String name, double price) {
      this.name = name;
@@ -29,6 +30,9 @@ class Product {
     this.price=price;
  }
 //  接口区
+// public int getNum(){
+//    return num;
+// }
  public String getName(){
     return name;
  }
@@ -55,9 +59,14 @@ class Product {
     this.name=name;
     this.color=color;
     this.price=price;
+    this.num++;
  }
-}
 
+// 计数器
+   // public void count(){
+   //    System.out.println("当前创建了"+getNum()+"个对象");
+   // }
+}
 //购物车类（购物清单类）
 class ShoppingCart {
  List<Product> productList;
@@ -92,6 +101,7 @@ public class Shoping {
          Product banana = new Product("香蕉","黄", 3.0);
          Product shoes =new Product("单鞋","黑",100);
          Product phone=new Product("HUAWEI Nova 11SE","五彩斑斓的黑 ",3999);
+         // phone.count();
 
 
          cart.addProduct(apple);
