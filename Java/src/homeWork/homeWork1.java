@@ -9,21 +9,20 @@ public class homeWork1 {
         String str;
         String[] newStrings;
         String matchNumber="[0-9]",matchEng="[A-Za-z]";
-        try (Scanner sc = new Scanner(System.in)) {
-            int numNum=0,engNum=0,otherNum=0;
-            str=sc.nextLine();
-            newStrings=str.split("");
-            for(int i=0;i<str.length();i++){
-                if(Pattern.matches(matchNumber, newStrings[i])){
-                    numNum=numNum+1;
-                }else if(Pattern.matches(matchEng, newStrings[i])){
-                    engNum=engNum+1;
-                }else{
-                    otherNum=otherNum+1;
-                }
+        Scanner sc=new Scanner(System.in);
+        int numNum=0,engNum=0,otherNum=0;
+        str=sc.nextLine();
+        newStrings=str.split("");
+        for(int i=0;i<str.length();i++){
+            if(Pattern.matches(matchNumber, newStrings[i])){
+                numNum=numNum+1;
+            }else if(Pattern.matches(matchEng, newStrings[i])){
+                engNum=engNum+1;
+            }else{
+                otherNum=otherNum+1;
             }
-            System.out.println(numNum);
         }
+        System.out.println(numNum);
         System.out.println(engNum);
         System.out.println(otherNum);
 
