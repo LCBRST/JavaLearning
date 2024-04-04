@@ -8,10 +8,11 @@ public class homeWork2 {
         // 输入一段字符串按给定区间切割
         String str,newStr;
         int beginIndex,endIndex;
-        Scanner sc=new Scanner(System.in);
-        str=sc.nextLine();
-        beginIndex=sc.nextInt()-1;
-        endIndex=sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            str=sc.nextLine();
+            beginIndex=sc.nextInt()-1;
+            endIndex=sc.nextInt();
+        }
         newStr=str.substring(beginIndex, endIndex);
         System.out.println(newStr);
     }

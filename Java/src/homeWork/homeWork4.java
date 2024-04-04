@@ -5,8 +5,9 @@ public class homeWork4 {
 	public static void main(String[] args){
 		String str;
 		int num=0,big=0,small=0,other=0,counts=0;
-		Scanner sc=new Scanner(System.in);
-		str=sc.nextLine();
+		try (Scanner sc = new Scanner(System.in)) {
+			str=sc.nextLine();
+		}
 		char[] characters=str.toCharArray();
 		for(int i=0;i<str.length();i++){
 
