@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class homeWork1 {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         // 计算输入的字符串英文字符数字其他字符的个数
         String str;
