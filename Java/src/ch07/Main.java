@@ -5,7 +5,8 @@ public class Main {
         //创建一个小车对象
         Car car=new Car("Xiaomi SU7",250,5);
         //创建一个公交车对象
-        // Bus bus=new Bus("宝宝巴士",100,50);
+        Bus bus=new Bus("宝宝巴士",100,50);
+        HEV hev=new HEV("秦Plus", 180, 5, 50);
 
     }
 }

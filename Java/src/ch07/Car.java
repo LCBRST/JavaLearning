@@ -6,7 +6,7 @@ public class Car extends Vehicle {//创建交通工具的子类
     public Car(String make, int maxSpeed, int numberOfSeats) {
         super(make, maxSpeed);//调用父类构造方法的语句必须在该方法的第一行
         this.numberOfSeats = numberOfSeats;
-        System.out.println("Mark2");
+        System.out.println("Car Mark(with 3 parameter)");
     }
 
     public int getNumberOfSeats() {

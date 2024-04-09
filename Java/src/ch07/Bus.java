@@ -6,6 +6,7 @@ public class Bus extends Vehicle {
     public Bus(String make, int maxSpeed, int capacity) {
         super(make, maxSpeed);
         this.capacity = capacity;
+        System.out.println("Bus Mark(with 3 parameter)");
     }
 
     public int getCapacity() {

@@ -8,7 +8,7 @@ public class Vehicle {//父类
     public Vehicle(String brand, int maxSpeed) {
         this.brand = brand;
         this.maxSpeed = maxSpeed;
-        System.out.println("Mark1");
+        System.out.println("Vehicle Mark(with 2 parameter)");
     }
     // 交通工具公有的方法
     public void startEngine() { //启动发动机
