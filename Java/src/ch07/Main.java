@@ -10,5 +10,6 @@ public class Main {
         car.startEngine();
         bus.honk();
         System.out.println(hev.getBrand());
+        car.countCarDoor();
     }
 }

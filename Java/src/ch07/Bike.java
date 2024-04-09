@@ -13,4 +13,7 @@ public class Bike extends Vehicle{
     }
 
     // 自行车特有的方法或属性可以在这里添加(换挡或刹车)
+    public void countCarDoor(){
+        System.out.println("没门儿");
+    }
 }

@@ -30,4 +30,7 @@ public class Vehicle {//父类
     public void setSpeed(int speed){
         this.maxSpeed=speed;
     }
+    public void countCarDoor(){
+        System.out.println("没门儿");
+    }
 }

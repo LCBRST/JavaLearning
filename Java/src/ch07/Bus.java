@@ -14,4 +14,7 @@ public class Bus extends Vehicle {
     }
 
     // 公交车特有的方法或属性可以在这里添加
+    public void countCarDoor(){
+        System.out.println("两扇门儿");
+    }
 }

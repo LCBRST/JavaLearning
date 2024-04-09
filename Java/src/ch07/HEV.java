@@ -21,4 +21,7 @@ public class HEV extends Car{
     public double getOil(){
         return oil;
     }
+    public void countCarDoor(){
+        System.out.println("四扇门儿");
+    }
 }

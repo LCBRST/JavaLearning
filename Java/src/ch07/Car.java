@@ -20,5 +20,7 @@ public class Car extends Vehicle {//创建交通工具的子类
     public void openDoor(){
         System.out.println(super.getBrand()+"车门打开");
     }
-    
+    public void countCarDoor(){
+        System.out.println("四扇门儿");
+    }
 }
