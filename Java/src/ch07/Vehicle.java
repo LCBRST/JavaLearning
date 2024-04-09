@@ -18,10 +18,16 @@ public class Vehicle {//父类
     public int getMaxSpeed() {
         return maxSpeed;
     }
+    public String getBrand(){
+        return brand;
+    }
 
     // 其他通用方法可以在这里添加
     // 喇叭
     public void honk(){
         System.out.println("叭叭叭");
+    }
+    public void setSpeed(int speed){
+        this.maxSpeed=speed;
     }
 }

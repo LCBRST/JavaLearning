@@ -17,4 +17,8 @@ public class Car extends Vehicle {//创建交通工具的子类
     // public void honk() { //按喇叭
     //     System.out.println("The car is honking!");
     // }
+    public void openDoor(){
+        System.out.println(super.getBrand()+"车门打开");
+    }
+    
 }
