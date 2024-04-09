@@ -1,4 +1,4 @@
-package ch07;
+package ch06;
 
 //基类 Vehicle(交通工具)
 class Vehicle {
