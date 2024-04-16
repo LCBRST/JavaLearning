@@ -1,7 +1,7 @@
 public class lielie extends Dog{
     public lielie(String name) {
         super(name);
-        //TODO Auto-generated constructor stub
+        
     }
 
     public void dogSounds(){

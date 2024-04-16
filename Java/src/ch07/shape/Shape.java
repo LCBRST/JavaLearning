@@ -1,6 +1,6 @@
 package ch07.shape;
 
-public abstract class Shae {
+public abstract class Shape {
     public abstract double getArea();
     public abstract double getLength();
 }
