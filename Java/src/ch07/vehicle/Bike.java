@@ -1,4 +1,4 @@
-package ch07;
+package ch07.vehicle;
 
 public class Bike extends Vehicle{
     private boolean hasGears; // 是否有齿轮

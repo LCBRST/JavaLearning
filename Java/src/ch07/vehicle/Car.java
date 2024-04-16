@@ -1,4 +1,4 @@
-package ch07;
+package ch07.vehicle;
 
 public class Car extends Vehicle {//创建交通工具的子类
     private int numberOfSeats; // 座位数

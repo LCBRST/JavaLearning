@@ -1,4 +1,4 @@
-package ch07;
+package ch07.vehicle;
 
 public class Bus extends Vehicle {
     private int capacity; // 载客量

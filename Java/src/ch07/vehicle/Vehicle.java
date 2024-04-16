@@ -1,4 +1,4 @@
-package ch07;
+package ch07.vehicle;
 
 public class Vehicle {//父类
     //公有属性
