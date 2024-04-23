@@ -1,3 +1,5 @@
+package ch07.animals;
+
 
 
 public class Dog extends Animal {  

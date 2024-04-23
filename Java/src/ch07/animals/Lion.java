@@ -1,4 +1,4 @@
-
+package ch07.animals;
 
 public class Lion extends Animal {  
     // Lion类可能具有特有的属性，比如鬃毛的颜色、领地意识等  

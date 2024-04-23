@@ -1,3 +1,5 @@
+package ch07.animals;
+
 
 
 public class Tiger extends Animal {  

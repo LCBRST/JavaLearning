@@ -1,4 +1,4 @@
-
+package ch07.animals;
 
 public class Bird extends Animal {  
     // Bird类可能还有特有的属性，比如翅膀的长度、能够飞行的能力等  

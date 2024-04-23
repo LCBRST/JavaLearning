@@ -1,3 +1,5 @@
+package ch07.animals;
+
 public class lielie extends Dog{
     public lielie(String name) {
         super(name);

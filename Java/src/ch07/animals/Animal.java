@@ -1,4 +1,4 @@
-
+package ch07.animals;
 
 public abstract class Animal {  
     // 动物共有的属性，比如名字  

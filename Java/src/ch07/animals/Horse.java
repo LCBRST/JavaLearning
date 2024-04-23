@@ -1,3 +1,5 @@
+package ch07.animals;
+
 
 public class Horse extends Animal {  
     // Horse类可能具有特有的属性，比如毛色、奔跑速度等  
