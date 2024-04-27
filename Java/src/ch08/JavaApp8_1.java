@@ -12,10 +12,10 @@ public class JavaApp8_1 {
                 System.out.println(x/y);
             }
             catch(ArrayIndexOutOfBoundsException e){
-                System.out.println("大傻逼 数组下标越界了 "+e.getMessage());
+                System.out.println("数组下标越界了 "+e.getMessage());
             }
             catch(ArithmeticException e){
-                System.out.println("大傻逼 你家除数能为0？ "+e.getMessage());
+                System.out.println("你家除数能为0？ "+e.getMessage());
             }
             finally{
                 

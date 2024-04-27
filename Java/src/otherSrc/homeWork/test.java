@@ -1,4 +1,4 @@
-package homeWork;
+package otherSrc.homeWork;
 
 public class test {
     public static void main(String[] args) {
