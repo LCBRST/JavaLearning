@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class JavaApp9_1 {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         //从键盘输入一串字符 存入myfile.txt
         FileInputStream fis=null;
