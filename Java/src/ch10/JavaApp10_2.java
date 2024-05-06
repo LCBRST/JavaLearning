@@ -11,8 +11,8 @@ public class JavaApp10_2 {
         FileInputStream fin=null;
         FileOutputStream fout=null;
         try{
-            fin=new FileInputStream("demo.png");
-            fout=new FileOutputStream("demo-copy.png");
+            fin=new FileInputStream("/workspaces/Java/Java/src/ch10/sources/demo.png");
+            fout=new FileOutputStream("/workspaces/Java/Java/src/ch10/sources/demo-copy.png");
             byte[] x=new byte[fin.available()];
             fin.read(x);
             fout.write(x);
