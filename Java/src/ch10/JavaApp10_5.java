@@ -26,6 +26,8 @@ public class JavaApp10_5 {
             }
             bfw.flush();
             System.out.println("文本共有"+count+"行");
+            bfr.close();
+            bfw.close();
         }catch(FileNotFoundException e){
             System.out.println("File Not Found");
         }
