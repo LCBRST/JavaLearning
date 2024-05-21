@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class JavaaApp11_9 {
+public class JavaApp11_9 {
     public static void main(String[] args) {
         //程序运行时将在命令行方式下输入的每个字符串添加到哈希集合中，集合中已经有的元素不能添加，并将重复元素输出，最后对集合进行遍历输出其所有元素
 
