@@ -15,8 +15,6 @@ public class Rect {
     int perimeter(){
         return 2*(height+width);
     }   
-}
-class Main {
 public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         Rect rect=new Rect(sc.nextInt(),sc.nextInt());
@@ -24,8 +22,11 @@ public static void main(String[] args) {
         System.out.println(rect.perimeter());
         sc.close();
     }
-    
 }
+
+
+    
+
 
 
 
