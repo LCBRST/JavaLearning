@@ -23,6 +23,27 @@ public class Vehicle {
     public double calculateTotalWeight() {
         return weight;
     }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入车辆信息（格式：轮胎数 净车重 载人数/载货量 车类型）：");
+        int wheelCount = scanner.nextInt();
+        double weight = scanner.nextDouble();
+        scanner.nextLine(); // 读取换行符
+        String type = scanner.nextLine();
+
+        Vehicle vehicle;
+        if (type.equals("小车")) {
+            int passengerCount = scanner.nextInt();
+            vehicle = new Car(wheelCount, weight, passengerCount);
+        } else {
+            double cargoWeight = scanner.nextDouble();
+            int passengerCount = scanner.nextInt();
+            vehicle = new Truck(wheelCount, weight, cargoWeight, passengerCount);
+        }
+
+        System.out.println(vehicle);
+        scanner.close();
+    }
 }
 class Car extends Vehicle {
     private int passengerCount;
@@ -76,28 +97,5 @@ class Truck extends Vehicle {
     @Override
     public String toString() {
         return String.format("%d轮货车，共载%d人，载货%.2fkg，总重%.2fkg", wheelCount, passengerCount, cargoWeight, calculateTotalWeight());
-    }
-}
-class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入车辆信息（格式：轮胎数 净车重 载人数/载货量 车类型）：");
-        int wheelCount = scanner.nextInt();
-        double weight = scanner.nextDouble();
-        scanner.nextLine(); // 读取换行符
-        String type = scanner.nextLine();
-
-        Vehicle vehicle;
-        if (type.equals("小车")) {
-            int passengerCount = scanner.nextInt();
-            vehicle = new Car(wheelCount, weight, passengerCount);
-        } else {
-            double cargoWeight = scanner.nextDouble();
-            int passengerCount = scanner.nextInt();
-            vehicle = new Truck(wheelCount, weight, cargoWeight, passengerCount);
-        }
-
-        System.out.println(vehicle);
-        scanner.close();
     }
 }
